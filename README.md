@@ -4,7 +4,7 @@ This repository showcases the projects I worked on during my training period.
 
 ## Projects
 
-- Project 1: [Project Nam](Project Link)
-- Project 2: [Project Name](Project Link)
-- Project 3: [Project Name](Project Link)
+- Project 1: [Basic HTML/CSS]
+- Project 2: [Note_App]
+
 
