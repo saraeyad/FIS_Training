@@ -38,7 +38,7 @@ const appRoutes = [
 export const AppRouter = () => {
   return (
     <ThemeProvider>
-      <BrowserRouter basename="/FIS_Training/task2_NoteApp">
+      <BrowserRouter>
         <Toaster />
         <Routes>
           {/* Redirect root to All-NOTE */}
