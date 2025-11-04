@@ -1,0 +1,65 @@
+name: Deploy Task2 NoteApp
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'task2_NoteApp/**'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'npm'
+          cache-dependency-path: task2_NoteApp/package-lock.json
+
+      - name: Install dependencies
+        working-directory: ./task2_NoteApp
+        run: npm ci
+
+      - name: Build
+        working-directory: ./task2_NoteApp
+        run: npm run build
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      - name: Create deployment structure
+        run: |
+          mkdir -p deploy
+          if [ -f "index.html" ]; then cp index.html deploy/; fi
+          if [ -d "task1" ]; then cp -r task1 deploy/; fi
+          cp -r task2_NoteApp/dist deploy/task2_NoteApp
+          # Copy index.html to 404.html for React Router client-side routing
+          cp deploy/task2_NoteApp/index.html deploy/task2_NoteApp/404.html
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: './deploy'
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+
