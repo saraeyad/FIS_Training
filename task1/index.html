@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="images/WhatsApp Image 2025-10-14 at 14.27.44_cba1d0f1.jpg" />
+
+    <title>الانضمام إلى فريق المنتجين - البركة للتأمين</title>
+  </head>
+  <body>
+    <!-- Start Header Section -->
+     
+    <header class="header">
+      
+      <div class="container">
+        <!-- Logo -->
+        <div class="logo-section">
+          <img src="images/logo.webp" alt="البركة للتأمين" class="logo" />
+        </div>
+        <!-- Top Navigation -->
+        <nav class="top-nav">
+          <ul class="nav-links">
+            <li><a href="#">الرئيسية</a></li>
+            <li>
+              <a href="#">عن البركة ▼</a>
+              <ul class="dropdown">
+                <li><a href="#">لمحة عن الشركة</a></li>
+                <li><a href="#">المهمة و الرؤيا</a></li>
+                <li><a href="#">كلمة رئيس مجلس الادارة</a></li>
+                <li><a href="#">كلمة المدير العام</a></li>
+                <li><a href="#">مجلس الادارة</a></li>
+                <li><a href="#">لجنة الرقابة الشرعية</a></li>
+                <li><a href="#">الفريق الاداري</a></li>
+              </ul>
+            </li>
+            <li><a href="#">الحملات والعروض</a></li>
+            <li><a href="#">محققي الحوادث</a></li>
+            <li>
+              <a href="#">المركز الإعلامي ▼</a>
+              <ul class="dropdown">
+                <li><a href="#">الأخبار</a></li>
+                <li><a href="#">المسؤولية الاجتماعية</a></li>
+              </ul>
+            </li>
+            <li><a href="#">الفروع</a></li>
+            <li>
+              <a href="#" class="active">انضم إلينا ▼</a>
+              <ul class="dropdown">
+                <li><a href="#">الانضمام إلى فريق الشركة</a></li>
+                <li><a href="#">الانضمام إلى فريق المنتجين</a></li>
+              </ul>
+            </li>
+            <li><a href="#">تواصل معنا</a></li>
+          </ul>
+          </nav>
+
+          <div class="social-links">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"  id="translate-btn" title="ترجمة"><i class="fa-solid fa-globe"></i></a>
+          </div>
+        <button class="nav-toggle" aria-label="Toggle navigation">
+           <i class="fas fa-bars"></i>
+          </button>
+      </div>
+    </header>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h1 class="hero-title">الانضمام إلى فريق المنتجين</h1>
+          <nav class="breadcrumb">
+            <a href="#" class="breadcrumb-link">الرئيسية</a>
+            <span class="breadcrumb-separator">/</span>
+            <span class="breadcrumb-current">الانضمام إلى فريق المنتجين</span>
+          </nav>
+        </div>
+      </div>
+    </section>
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- <div class="container"> -->
+      <div class="form-section">
+        <h2 class="form-title">
+          لإرسال طلب انضمام لفريق المنتجين الرجاء تعبئة البيانات التالية
+        </h2>
+        <form class="form" id="Form" autocomplete="off">
+          <div class="form-group-section">
+            <div class="form-group">
+              <label for="fullName"
+                ><span class="section-icon">👤</span>البيانات الشخصية</label 
+              >
+              <div class="field">
+              <input
+                type="text"
+                id="fullName"
+                name="fullName"
+                placeholder = " ">
+                <label for="fullname">الاسم الرباعي</label>
+                </div>
+                
+              
+            </div>
+          </div>
+          <!-- Contact Information Section -->
+          <div class="form-group-section">
+            <div>
+            <label for="phoneNumber"
+              ><span class="section-icon">📞</span>معلومات العنوان
+              والاتصال</label
+            >
+            <!-- <div class="form-row">
+              <div class="form-group"> -->
+                <div class="field">
+                <input
+                  type="tel"
+                  id="phoneNumber"
+                  name="phoneNumber"
+                  placeholder=" ">
+                  <label for="phoneNumber">رقم الهاتف الخلوي</label>
+                  </div>
+                  </div>
+<!--                 
+              </div> -->
+              
+                <select id="location" name="location" >
+                  <option value="" disabled selected> * مكان الإقامة </option>
+                </select>
+               
+             
+            </div>
+          
+
+          <!-- Educational and Professional Information Section -->
+          <div class="form-group-section">
+            <div>
+            <label for="experience"
+              ><span class="section-icon">🎓</span>البيانات التعليمية والمهنية
+            </label>
+            <!-- <div class="form-row"> -->
+            
+                 <div class="field">
+                <input
+                  type="number"
+                  id="experience"
+                  name="experience"
+                  placeholder=" "
+                  min="0"
+                />
+                <label for="experience"> عدد سنوات الخبرة</label>
+                </div>
+                </div>
+              
+                <div class="file-upload">
+                  <label for="cv" class="file-upload-label">
+                    <span class="file-upload-text"
+                      >الرجاء إرفاق السيرة الذاتية</span
+                    >
+                    <span class="file-upload-button">إرفاق</span>
+                  </label>
+                  <input
+                    type="file"
+                    id="cv"
+                    name="cv"
+                    accept=".pdf,.doc,.docx"
+                  />
+                </div>
+              </div>
+
+          <!-- Submit Button -->
+          <div class="form-submit">
+            <button type="submit" class="submit-btn">إرسال الطلب</button>
+          </div>
+        </form>
+      </div>
+    </main>
+    <!-- ========= START FOOTER SECTION ========= -->
+    <footer class="site-footer">
+      <div class="footer-container">
+        <div class="footer-top">
+          <div class="top-1">
+            <h3 class="widget-title">نشرة البركة</h3>
+            <p class="widget-description">
+              ابق على اطلاع وتواصل دائم مع البركة للتأمين من خلال الإشتراك<br />
+              في القائمة البريدية الخاصة بنشرة البركة.
+            </p>
+            <form action="">
+              <div class="input-group">
+                <input
+                  type="text"
+                  placeholder="الإسم"
+                  class="newsletter-input"
+                />
+                <input
+                  type="email"
+                  placeholder="البريد الإلكتروني"
+                  class="newsletter-input"
+                />
+              </div>
+              <button type="submit" class="newsletter-btn">إشتراك</button>
+            </form>
+            <div class="social-icons">
+              <div class="social-icon">
+                <a href="#" title="Facebook"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+              </div>
+              <div class="social-icon">
+                <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+              </div>
+              <div class="social-icon">
+                <a href="#" title="LinkedIn"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+              </div>
+              <div class="social-icon">
+                <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="top-2">
+            
+             <iframe
+                   src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FBarakaPs&tabs=timeline&width=340&height=130&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true"
+                   width="340"
+                   height="130"
+                   style="border:none;overflow:hidden"
+                   scrolling="no"
+                   frameborder="0"
+                   allowfullscreen="true"
+                   allow="encrypted-media">
+              </iframe>  
+          </div>
+          <div class="top-3">
+            <div>
+            <div>
+              <img
+                src="images/377671693905873.webp"
+                alt="baraka-logo"
+                width="200"
+                height="100"
+              />
+            </div>
+            <h2 >البركة موبايل</h2>
+            </div>
+            <div class="footer-btn">
+              <div class="footer-download-btn">
+                <div>
+                  <i class="fa-brands fa-apple"></i>
+                </div>
+                <div class="footer-download-btn-text">
+                  <span>Available on the</span>
+                  <span>App Store</span>
+                </div>
+              </div>
+              <div class="footer-download-btn">
+                <div>
+                  <i class="fa-brands fa-google-play"></i>
+                </div>
+                <div class="footer-download-btn-text">
+                  <span>Get it on</span>
+                  <span>  Google Play</span>
+                </div>
+              </div>
+            </div>
+          </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="footer-copyright">
+            <p>
+              All Rights Reserved - Al Baraka Insurance Company © 2025 Developed
+              by FIS
+            </p>
+          </div>
+          <div class="footer-legal">
+            <p>سياسة الخصوصية</p>
+            <p>الشروط والحماية</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- ========= QUICK ACCESS ICONS ========= -->
+    <div class="floating-chat">
+      <button class="chat-btn">
+        <i class="fab fa-whatsapp"></i>
+      </button>
+      <button class="chat-btn email-btn">
+        <i class="fas fa-envelope"></i>
+      </button>
+    </div>
+    <!-- Modal Message Box -->
+    <div id="customModal" class="modal">
+      <div class="modal-content">
+        <h2 id="modalTitle"></h2>
+        <button id="closeModal">حسناً</button>
+      </div>
+    </div>
+
+
+    <script src="script.js"></script>
+  </body>
+</html>

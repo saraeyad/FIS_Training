@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+* {
+  transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+}
+
+/* Light theme (default) variables */
+:root {
+  --color-bg: #f9fafb;
+  --color-surface: #ffffff;
+  --color-surface-2: #f3f4f6;
+  --color-text: #111827;
+  --color-muted: #6b7280;
+  --color-border: #cbd5e1;
+  --color-input: #f3f4f6;
+  --color-accent: #e5e7eb;
+  --color-primary: #2f60c9;
+  --color-secondary: #1c355e;
+  --color-primary-foreground: #ffffff;
+  /* Brand/selection colors (light) */
+  --brand-bg-hover: #dbeafe; /* blue-100 */
+  --brand-bg-active: #bfdbfe; /* blue-200 (darker than blue-100) */
+  --brand-text: #1e3a8a; /* blue-900 */
+  --brand-border-active: #3b82f6; /* blue-500 */
+}
+
+/* Dark theme variables */
+.dark {
+  --color-bg: #0e121b;
+  --color-surface: #0f111a;
+  --color-surface-2: #111827;
+  --color-text: #ffffff;
+  --color-text-2: #eeeeee;
+  --color-muted: #9ca3af;
+  --color-border: #1f2937;
+  --color-input: #111827;
+  --color-accent: #0f172a;
+  --color-primary: #2f60c9;
+  --color-secondary: #1c355e;
+  --color-primary-foreground: #0b1220;
+  /* Brand/selection colors (dark) */
+  --brand-bg-hover: rgba(30, 58, 138, 0.20); /* ~ blue-900/20 */
+  --brand-bg-active: rgba(30, 58, 138, 0.30); /* ~ blue-900/30 */
+  --brand-text: #93c5fd; /* blue-300 */
+  --brand-border-active: #60a5fa; /* blue-400 */
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  height: 100vh;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}
+
+/* Keep html background in sync with variables */
+html {
+  background-color: var(--color-bg);
+}
+
