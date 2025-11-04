@@ -1,5 +1,5 @@
 import { ROUTES } from "../../router/routes";
-import type { Note, SaveNoteParams } from "../../types";
+import type {  SaveNoteParams } from "../../types";
 
 // Helper function to parse tags string into array
 const parseTags = (tags: string): string[] => {
